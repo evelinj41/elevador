@@ -6,7 +6,7 @@ var direccion = prompt("subes o bajas")
 pisoSeleccionado = prompt("a que piso vas?")
 
 
-if (direccion== "subes") {
+if (direccion== "subo") {
 for (piso; piso <= ultimoPiso; piso++ ) { 
 	console.log("estas en el piso " + piso);
 	if (piso == pisoSeleccionado) {
@@ -14,10 +14,10 @@ for (piso; piso <= ultimoPiso; piso++ ) {
 	}
 }
 }
- if (direccion == "bajas") {
+ if (direccion == "bajo") {
 	piso= 20;
 
-for (ultimoPiso; piso >= primerPiso; piso-- ) { 
+for (piso; piso >= primerPiso; piso-- ) { 
 	console.log("estas en el piso " + piso);
 	if (piso == pisoSeleccionado) {
 		alert ("llegaste");
